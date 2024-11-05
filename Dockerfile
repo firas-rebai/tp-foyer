@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
-EXPOSE 8082
-ADD target/timesheet-devops-1.0.jar timesheet-devops-1.0.jar
-ENTRYPOINT ["java", "-jar","/timesheet-devops-1.0.jar"]
+FROM openjdk:11-jdk-slim
+EXPOSE 8089
+ADD target/foyer-1.0.jar foyer-1.0.jar
+ENTRYPOINT ["java","-jar","/foyer-1.0.jar"] 
